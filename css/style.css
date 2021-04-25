@@ -1601,7 +1601,7 @@ transition: all 0.3s ease-in;
 
 .col-4{
     flex-basis: 25%;
-    padding: 10px;
+    padding: 20px;
     min-width: 200px;
     margin-bottom: 50px;
 }
@@ -1611,6 +1611,22 @@ transition: all 0.3s ease-in;
 }
 
 .col-4 p {
-    background-color: #0fbbad;
+    background-color: #A7FFB3;
     text-align: center;
+}
+.content {
+    display: flex;
+}
+.content img{
+    width:500px;
+    height: auto;
+    padding: 15px;
+    border-radius: 50px;
+    display: inline;
+
+}
+
+.content p{
+    display:inline;
+    padding: 50px;
 }
