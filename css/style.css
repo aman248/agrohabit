@@ -1387,11 +1387,10 @@ font-weight: normal;
 /** contact section **/
  .contact {
 padding-bottom: 90px;
-background-size: cover;
 background: url(../images/banner2.png);
-background-size: cover;
+/* background-size: cover; */
 background-repeat: no-repeat;
-background-size: 100%;
+/* background-size: 100%; */
 
 }
 .contact_bg .titlepage {padding-bottom: 20px; text-align: right !important; padding-right: 10px;}
@@ -1592,6 +1591,7 @@ transition: all 0.3s ease-in;
 }
 /** end footer **/
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
+/** product section **/
 .small-container{
     max-width: 1080px;
     margin: auto;
@@ -1609,24 +1609,59 @@ transition: all 0.3s ease-in;
 .col-4 img{
     width:100%;
 }
+.col-4 h4{
+    text-align: center;
+    padding-top: 5px;
+}
 
 .col-4 p {
-    background-color: #A7FFB3;
+    background-color: #4bc714;
     text-align: center;
+    color:black;
 }
-.content {
-    display: flex;
+.col-4 p:hover{
+    background-color: #057512;
+}
+/** end products **/
+
+
+.col-007 button{
+    margin-top: 50px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius:5px;
+    background:#A7FFB3;
 }
 .content img{
-    width:500px;
+    align-self: center;
+    width:95%;
     height: auto;
     padding: 15px;
     border-radius: 50px;
-    display: inline;
 
 }
 
-.content p{
-    display:inline;
+.col-007{
     padding: 50px;
+}
+@media(min-width:768px){
+    .content {
+        display: flex;
+    }
+    .content img{
+        width:500px;
+        height: auto;
+        padding: 15px;
+        border-radius: 50px;
+        flex-basis:50%;
+        display: inline;
+    
+    }
+    
+    .col-007{
+        display: inline;
+        padding: 50px;
+        flex-basis:50%;
+    }
+
 }

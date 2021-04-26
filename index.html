@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- style css -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fstyle.css">
   <!-- Responsive-->
   <link rel="stylesheet" href="css/responsive.css">  
   <!-- Scrollbar Custom CSS -->
@@ -61,9 +62,9 @@
                   <nav class="main-menu ">
                     <ul class="menu-area-main">
                       <li class="active"> <a href="index.html">Home</a> </li>
+                      <li> <a href="shop.html">Shop</a> </li>
+                      <li> <a href="#testimonial">Services</a> </li>
                       <li> <a href="#about">About</a> </li>
-                      <li> <a href="#vegetable">Plants</a> </li>
-                      <li> <a href="#testimonial">Testomonial</a> </li>
                       <li> <a href="#contact">Contact Us</a> </li>
                      
                      <li> <a href="#"><img src="icon/icon_b.png" alt="#" /></a></li>
@@ -78,7 +79,7 @@
      </div>
      <!-- end header inner -->
 
-     <!-- end header -->
+     <!-- slider -->
      <section class="slider_section">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -162,9 +163,9 @@
 </section>
 </div>
 </header>
-<!--featured products-->
+<!--end slider-->
 
-<!-- vegetable -->
+<!-- products -->
 <div id="vegetable" class="vegetable">
   <div class="container">
     <div class="row">
@@ -202,18 +203,18 @@
     </div>
   </div>
 </div>
-<!-- end vegetable -->
+<!-- end products -->
 
 
 
 
-   <!-- clients -->
+   <!-- Services -->
     <div id="testimonial" class="clients">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="titlepage">
-                        <h2>testimonial</h2>
+                        <h2>services</h2>
                     </div>
                 </div>
             </div>
@@ -316,12 +317,12 @@
         </div>
     </div>
   
-    <!-- end clients -->
+    <!-- end services -->
 
 
 
 
-<!-- about  -->
+<!-- about us  -->
 <div id="about" class="about">
   <div class="container-fluid">
     <div class="row">
@@ -351,52 +352,46 @@
                 <div class="titlepage">
                   <h2>Contact <strong class="llow">us</strong></h2>
                 </div>
+                <section>
+                  <div class="containe">
+                    <form action="https://formspree.io/f/mqkwarwz" method="POST" id="my-form">
+                
+                      <div class="form-group">
+                        <label for="firstName"> First Name</label>
+                        <input type="text" id="firstName" name="firstName">
+                      </div>
+                
+                      <div class="form-group">
+                        <label for="latsName">Phone no:</label>
+                        <input type="text" id="lastName" name="lastName">
+                      </div>
+                
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                      </div>
+                
+                      <div class="form-group">
+                        <label for="massage">Massage</label>
+                        <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                      </div>
+                
+                      <button id="submit_button" type="submit">Submit</button>
+                    </form>
+                  </div>
+                  <div id="status"></div>
+                </section>
+
    </div>
+   </div>
+   </div>
+   </div>
+  
 
-</div>
-    <div class="white_color">
-      <div class="row">
-
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-           <form class="contact_bg">
-            <div class="row">
-              <div class="col-md-12">
-              
-                <div class="col-md-12">
-                  <input class="contactus" placeholder="Your Name" type="text" name="Your Name">
-                </div>
-                <div class="col-md-12">
-                  <input class="contactus" placeholder="Email" type="text" name="Email">
-                </div>
-                <div class="col-md-12">
-                  <input class="contactus" placeholder="Phone Number" type="text" name="Phone Number">
-                </div>
-                <div class="col-md-12">
-                  <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                </div>
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                  <button class="send">Send</button>
-                </div>
-              </div>
-            </form>
-          </div>
-            </div>
-      
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-<!-- <div id="map">
-          </div> -->
-           </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-</div>
-</div>
     <!-- end contact -->
 
     <!--  footer -->
-    <footr>
+    <footer>
       <div class="footer ">
         <div class="container">
           <div class="row">
@@ -440,9 +435,10 @@
                 </div>
               </div>
             </div>
-          </footr>
+          </footer>
           <!-- end footer -->
           <!-- Javascript files-->
+
           <script src="js/jquery.min.js"></script>
           <script src="js/popper.min.js"></script>
           <script src="js/bootstrap.bundle.min.js"></script>
@@ -452,35 +448,54 @@
           <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
           <script src="js/custom.js"></script>
           <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-
-
           <script>
-// This example adds a marker to indicate the position of Bondi Beach in Sydney,
-// Australia.
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 11,
-    center: {
-      lat: 40.645037,
-      lng: -73.880224
-    },
-  });
-
-  var image = 'images/maps-and-flags.png';
-  var beachMarker = new google.maps.Marker({
-    position: {
-      lat: 40.645037,
-      lng: -73.880224
-    },
-    map: map,
-    icon: image
-  });
-}
-</script>
-<!-- google map js -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
-<!-- end google map js -->
-
+            window.addEventListener("DOMContentLoaded", function () {
+              // get the form elements defined in your form HTML above
+            
+              var form = document.getElementById("my-form");
+              // var button = document.getElementById("my-form-button");
+              var status = document.getElementById("status");
+            
+              // Success and Error functions for after the form is submitted
+            
+              function success() {
+                form.reset();
+                status.classList.add("success");
+                status.innerHTML = "Thanks! we will contact you shortly";
+              }
+            
+              function error() {
+                status.classList.add("error");
+                status.innerHTML = "Oops! There was a problem.";
+              }
+            
+              // handle the form submission event
+            
+              form.addEventListener("submit", function (ev) {
+                ev.preventDefault();
+                var data = new FormData(form);
+                ajax(form.method, form.action, data, success, error);
+              });
+            });
+            
+            // helper function for sending an AJAX request
+            
+            function ajax(method, url, data, success, error) {
+              var xhr = new XMLHttpRequest();
+              xhr.open(method, url);
+              xhr.setRequestHeader("Accept", "application/json");
+              xhr.onreadystatechange = function () {
+                if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                if (xhr.status === 200) {
+                  success(xhr.response, xhr.responseType);
+                } else {
+                  error(xhr.status, xhr.response, xhr.responseType);
+                }
+              };
+              xhr.send(data);
+            }
+            
+          </script>
 
 
 </body>
