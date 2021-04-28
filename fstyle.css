@@ -82,4 +82,7 @@
       pointer-events: none;
     }
   }
+#cars{
+    visibility: hidden;
+}
   

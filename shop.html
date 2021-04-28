@@ -126,23 +126,23 @@
             <div class="row">
                 <div class="col-4">
                     <img src="images/img3.jpg" alt="">
-                    <p>Buy Now</p>
+                    <p class="buy-now">Buy Now</p>
                     <h4><a href="details.html">Anjeer Plant</a></h4>
                     
                 </div>
                 <div class="col-4">
                     <img src="images/img3.jpg" alt="">
-                    <p>Buy Now</p>
+                    <p class="buy-now">Buy Now</p>
                     <h4>Kinnu plant</h4>
                 </div>
                 <div class="col-4">
                     <img src="images/img3.jpg" alt="">
-                    <p>Buy Now</p>
+                    <p class="buy-now">Buy Now</p>
                     <h4> Pomegranate plant</h4>
                 </div>
                 <div class="col-4">
                     <img src="images/img3.jpg" alt="">
-                    <p>Buy Now</p>
+                    <p class="buy-now">Buy Now</p>
                     <h4> Guava plant</h4>
                 </div>
             </div>
@@ -166,28 +166,28 @@
             <div class="row">
                 <div class="col-4">
                     <img src="images/img3.jpg" alt="">
-                    <p>Buy Now</p>
+                    <p class="buy-now">Buy Now</p>
                     <h4><a href="details.html">Turkey organic dry fig</a></h4>
                     
                 </div>
                 <div class="col-4">
                     <img src="images/img3.jpg" alt="">
-                    <p>Buy Now</p>
+                    <p class="buy-now">Buy Now</p>
                     <h4>Mazafati dates</h4>
                 </div>
                 <div class="col-4">
                     <img src="images/img3.jpg" alt="">
-                    <p>Buy Now</p>
+                    <p class="buy-now">Buy Now</p>
                     <h4> Cashews</h4>
                 </div>
                 <div class="col-4">
                     <img src="images/img3.jpg" alt="">
-                    <p>Buy Now</p>
+                    <p class="buy-now">Buy Now</p>
                     <h4> Almonds</h4>
                 </div>
                 <div class="col-4">
                     <img src="images/img3.jpg" alt="">
-                    <p>Buy Now</p>
+                    <p class="buy-now">Buy Now</p>
                     <h4> Raisins</h4>
                 </div>
             </div>
@@ -211,7 +211,7 @@
             <div class="row">
                 <div class="col-4">
                     <img src="images/img3.jpg" alt="">
-                    <p>Buy Now</p>
+                    <p class="buy-now">Buy Now</p>
                     <h4><a href="details.html"> Cumins seed</a></h4>
                     
                 </div>
@@ -236,18 +236,18 @@
                 <div class="row">
                     <div class="col-4">
                         <img src="images/img3.jpg" alt="">
-                        <p>Buy Now</p>
+                        <p class="buy-now">Buy Now</p>
                         <h4><a href="details.html">kinnu</a></h4>
                         
                     </div>
                     <div class="col-4">
                         <img src="images/img3.jpg" alt="">
-                        <p>Buy Now</p>
+                        <p class="buy-now">Buy Now</p>
                         <h4>Pomegranate</h4>
                     </div>
                     <div class="col-4">
                         <img src="images/img3.jpg" alt="">
-                        <p>Buy Now</p>
+                        <p class="buy-now">Buy Now</p>
                         <h4>Coconut</h4>
                     </div>
                 </div>
@@ -271,13 +271,13 @@
                 <div class="row">
                     <div class="col-4">
                         <img src="images/img3.jpg" alt="">
-                        <p>Buy Now</p>
+                        <p class="buy-now">Buy Now</p>
                         <h4><a href="details.html"> Carrots</a></h4>
                         
                     </div>
                     <div class="col-4">
                         <img src="images/img3.jpg" alt="">
-                        <p>Buy Now</p>
+                        <p class="buy-now">Buy Now</p>
                         <h4> Tinda</h4>
                     </div>
                 </div>
@@ -345,7 +345,14 @@
           <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
           <script src="js/custom.js"></script>
           <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-
+          <script>
+            document.querySelectorAll('.buy-now').forEach(item => {
+              item.addEventListener('click', event => {
+                //handle click
+                window.location.href = "form.html";
+              })
+            })
+          </script>
 
 </body>
 

@@ -179,23 +179,23 @@
       <div class="row">
           <div class="col-4">
               <img src="images/img3.jpg" alt="">
-              <p>Buy Now</p>
+              <p class="buy-now">Buy Now</p>
               <h4><a href="details.html">Turkey Natural fig</a></h4>
               
           </div>
           <div class="col-4">
               <img src="images/img3.jpg" alt="">
-              <p>Buy Now</p>
+              <p class="buy-now">Buy Now</p>
               <h4>Mazafati dates</h4>
           </div>
           <div class="col-4">
               <img src="images/img3.jpg" alt="">
-              <p>Buy Now</p>
+              <p class="buy-now">Buy Now</p>
               <h4>kinnu</h4>
           </div>
           <div class="col-4">
               <img src="images/img3.jpg" alt="">
-              <p>Buy Now</p>
+              <p class="buy-now">Buy Now</p>
               <h4>carrots</h4>
           </div>
       </div>
@@ -494,6 +494,13 @@
               };
               xhr.send(data);
             }
+
+          document.querySelectorAll('.buy-now').forEach(item => {
+            item.addEventListener('click', event => {
+              //handle click
+              window.location.href = "form.html";
+            })
+          })
             
           </script>
 
