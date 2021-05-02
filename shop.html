@@ -84,26 +84,27 @@
             <div class="row">
               <div class="col-md-12">
                 <div  class="titlepage">
+                  <br>
                   <h2> SHOP<strong class="llow"></strong> </h2>
                   <hr>
                 </div>
               </div>
             </div>
          <ul class="shop-list">
-             <li>
-                 <a href="#plants">plants</a>
+             <li class="list-item"  onclick="goToPlants()">
+                 <a>Plants</a>
                  
              </li>
-             <li>
-                <a href="#dry_fruits">dry fruits</a>
+             <li class="list-item" onclick="goToDryFruits()">
+                <a href="#dry_fruits">Dry Fruits</a>
                
             </li>
-            <li>
-                <a href="#spices">spices</a>
+            <li class="list-item"  onclick="goToSpices()">
+                <a href="#spices">Spices</a>
               
             </li>
-            <li>
-                <a href="#vegetables">vegetables</a>
+            <li class="list-item" onclick="goToVegetables()">
+                <a href="#vegetables">Vegetables</a>
                
             </li>
          </ul>
@@ -352,6 +353,23 @@
                 window.location.href = "form.html";
               })
             })
+            function goToPlants(){
+              window.location.href = "#plants";
+
+            }
+            function goToDryFruits(){
+              window.location.href = "#dry_fruits";
+
+            }
+            function goToSpices(){
+              window.location.href = "#spices";
+
+            }
+            function goToVegetables(){
+              window.location.href = "#vegetables";
+
+            }
+
           </script>
 
 </body>

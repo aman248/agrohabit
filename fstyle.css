@@ -32,6 +32,7 @@
   
   #massage {
     resize: vertical;
+    height: 3em;
   }
   #submit_button {
     width: 100%;
