@@ -1658,7 +1658,7 @@ border-radius: 30px;
 /** end products **/
 
 /* services page */
-.col-007 button{
+/* .col-007 button{
     margin-top: 50px;
     padding-left:15px;
     padding-right:15px;
@@ -1697,7 +1697,36 @@ border-radius: 30px;
         flex-basis:50%;
     }
 
+} */
+
+/* service page 2 */
+.content2 .col-008{
+    width:60%;
+    margin:auto;
+    margin-top: 30px;
 }
+.content2 .col-009{
+    margin: auto;
+    width:50%;
+}
+.col-008 button{
+    margin-top: 50px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius:5px;
+    background:#A7FFB3;
+}
+.content2 img{
+}
+@media(max-width:768px){
+    .content2 .col-008{
+        width:90%;
+        margin:auto;
+        margin-top: 30px;
+
+    }
+}
+
 
 /* shop list */
 .shop-list li{
@@ -1751,22 +1780,30 @@ border-radius: 30px;
      line-height: 55px;
      font-size: 50px;
 }
-/* @media(min-width:768px){
-    .about-us{
-        width:80%;
-        margin-left: 3%;
-        margin-right: 3%;
-        border-right: solid black ;
-    }
-
-} */
 .about-us{
+    width:90%;
+    /* margin: 20px 30px 20px 30px; */
+    margin:auto;
     background-color: #fff;
     box-shadow: #ddd 0px 0px 13px 5px;
-    margin: 20px 30px 20px 30px;
-    align-self: center;
     padding:30px;
 }
+
+@media(min-width:768px){
+
+    .about-us{
+        background-color: #fff;
+        box-shadow: #ddd 0px 0px 13px 5px;
+        margin: 20px 30px 20px 30px;
+        width:60%;
+        margin: auto;
+        align-self: center;
+        padding:30px;
+    }
+
+}
+
+
 /* about section */
 @media(min-width:768px){
     .about2{
