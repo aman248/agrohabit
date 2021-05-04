@@ -1707,7 +1707,8 @@ border-radius: 30px;
 }
 .content2 .col-009{
     margin: auto;
-    width:50%;
+    width:60%;
+    overflow: hidden;
 }
 .col-008 button{
     margin-top: 50px;
@@ -1716,8 +1717,11 @@ border-radius: 30px;
     border-radius:5px;
     background:#A7FFB3;
 }
-.content2 img{
+.col-009 img{
+    overflow: hidden;
+
 }
+
 @media(max-width:768px){
     .content2 .col-008{
         width:90%;
