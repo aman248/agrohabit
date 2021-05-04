@@ -79,11 +79,7 @@
  button:focus {
      outline: none;
 }
- ul, li, ol {
-     margin: 0px;
-     padding: 0px;
-     list-style: none;
-}
+
  p {
      margin: 0px;
      font-weight: 300;
@@ -1735,7 +1731,17 @@ border-radius: 30px;
     }
 }
 
+/* details page */
+.container2 .col-009{
+    margin-top: 5%;
+    width: 30%;
+    margin-left: 15%;
 
+}
+.container2 .col-008{
+    margin: 10%;
+
+}
 /* shop list */
 .shop-list li{
     background-color: #00A44B;
@@ -1875,3 +1881,8 @@ text-align: center;
 text-transform: uppercase;
 border-radius: 30px;
 }
+
+ul.circle_style{
+    list-style-type: circle;
+}
+

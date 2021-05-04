@@ -126,25 +126,25 @@
           <div class="small-container">
             <div class="row">
                 <div class="col-4">
-                    <img src="images/shop/anjeer_plant.jpg" alt="">
+                    <img onclick="openAnjeerPlant()" src="images/shop/anjeer_plant.jpg" alt="">
                     <p class="buy-now">Buy Now</p>
-                    <h4><a href="details.html">Anjeer Plant</a></h4>
+                    <h4 onclick="openAnjeerPlant()">Anjeer Plant</h4>
                     
                 </div>
                 <div class="col-4">
-                    <img src="images/shop/kinnu_plant.jpg" alt="">
+                    <img onclick="openKinnuPlant()" src="images/shop/kinnu_plant.jpg" alt="">
                     <p class="buy-now">Buy Now</p>
-                    <h4>Kinnu plant</h4>
+                    <h4 onclick="openKinnuPlant()">Kinnu plant</h4>
                 </div>
                 <div class="col-4">
-                    <img src="images/shop/pomegranate_plant_1.webp" alt="">
+                    <img onclick="openPomegranatePlant()" src="images/shop/pomegranate_plant_1.webp" alt="">
                     <p class="buy-now">Buy Now</p>
-                    <h4> Pomegranate plant</h4>
+                    <h4 onclick="openPomegranatePlant()"> Pomegranate plant</h4>
                 </div>
                 <div class="col-4">
-                    <img src="images/shop/guava_plant_1.webp" alt="">
+                    <img onclick="openGuavaPlant()" src="images/shop/guava_plant_1.webp" alt="">
                     <p class="buy-now">Buy Now</p>
-                    <h4> Guava plant</h4>
+                    <h4 onclick="openGuavaPlant()" > Guava plant</h4>
                 </div>
             </div>
           
@@ -358,6 +358,21 @@
             function goToVegetables(){
               window.location.href = "#vegetables";
 
+            }
+            function openKinnuPlant(){
+              window.location.href = "kinnu_plant.html"
+            }
+            function openPomegranatePlant(){
+              window.location.href = "pomegranate_plant.html"
+            }
+            function openAnjeerPlant(){
+              window.location.href = "anjeer.html"
+            }
+            function openDryFig(){
+              window.location.href = "dry_fig.html"
+            }
+            function openGuavaPlant(){
+              window.location.href = "guava_plant.html"
             }
 
           </script>
