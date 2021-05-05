@@ -179,25 +179,25 @@
     <div class="small-container">
       <div class="row">
           <div class="col-4">
-              <img src="images/shop/guava_plant_1.webp" alt="">
+              <img onclick="openDryFig()" src="images/shop/dry_fig.jpg" alt="">
               <p class="buy-now">Buy Now</p>
-              <h4><a href="details.html">Guava plant</a></h4>
+              <h4 onclick="openDryFig()">Natural Dry Fig</h4>
               
           </div>
           <div class="col-4">
-              <img src="images/shop/pomegranate_plant_1.webp" alt="">
+              <img onclick="openMazafatiDates()" src="images/shop/mazafati_dates.png" alt="">
               <p class="buy-now">Buy Now</p>
-              <h4>Pomegranate plant</h4>
+              <h4 onclick="openMazafatiDates()">Mazafati Dates</h4>
           </div>
           <div class="col-4">
-              <img src="images/shop/kinnu_plant.jpg" alt="">
+              <img onclick="openCashews()" src="images/shop/cashew.webp" alt="">
               <p class="buy-now">Buy Now</p>
-              <h4>Kinnu Plant</h4>
+              <h4 onclick="openCashews()">Cashews</h4>
           </div>
           <div class="col-4">
-              <img src="images/shop/anjeer_plant.jpg" alt="">
+              <img onclick="openAlmonds()" src="images/shop/almonds.jpg" alt="">
               <p class="buy-now">Buy Now</p>
-              <h4>Anjeer Plant</h4>
+              <h4 onclick="openAlmonds()">Almonds</h4>
           </div>
       </div>
     
@@ -208,7 +208,7 @@
 <!-- end products -->
 
 
-
+<hr>
 
    <!-- Services -->
     <div id="testimonial" class="clients">
@@ -327,7 +327,7 @@
 
   </div>
   <div class="about-box_img2">
-    <img src="images/about.jpg" alt="#" /><
+    <img src="images/about.jpg" alt="#" />
 
   </div>
   
@@ -532,6 +532,19 @@
           function open_about(){
             window.location.href = "about.html";
             
+          }
+          //products on click
+          function openMazafatiDates(){
+            window.location.href = "mazafati_dates.html"
+          }
+          function openDryFig(){
+            window.location.href = "dry_fig.html"
+          }
+          function openCashews(){
+            window.location.href = "cashews.html"
+          }
+          function openAlmonds(){
+            window.location.href = "almonds.html"
           }
             
           </script>
