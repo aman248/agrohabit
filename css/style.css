@@ -1733,13 +1733,27 @@ border-radius: 30px;
 
 /* details page */
 .container2 .col-009{
-    margin-top: 5%;
-    width: 30%;
-    margin-left: 15%;
+    width: 80%;
+    margin:auto;
 
 }
 .container2 .col-008{
     margin: 10%;
+
+}
+@media(min-width:768px){
+    .container2 .col-008{
+        margin: 10%;
+        margin-top: 5%;
+        max-width: 30%;
+    
+    }
+    .container2 .col-009{
+        margin-top: 5%;
+        width: 30%;
+        margin-left: 15%;
+    
+    }
 
 }
 /* shop list */
